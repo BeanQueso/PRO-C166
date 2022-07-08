@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"> </script>
+        <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"> </script>
+        <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+    </head>
+    <body> 
+        <a-scene>
+            <a-assets>
+                <a-asset-item id = "bulb-gltf" src="./assets/bulb/scene.gltf"></a-asset-item>
+                <a-asset-item id = "battery-gltf" src="./assets/battery/scene.gltf"></a-asset-item>
+                <a-asset-item id = "switch-gltf" src="./assets/switch/scene.gltf"></a-asset-item>
+            </a-assets>
+            <a-marker preset = "hiro">
+                <a-camera wasd-controls = "enabled:false" look-controls = "enabled:false"></a-camera>
+                <a-entity position = "0 -1 -3.3" scale = "1 1.45 1">
+
+                    <a-entity id = "bulb" gltf-model = "#bulb-gltf" position = "-0.5 2.6 -2" scale = "4 4 4"></a-entity> 
+                    <a-entity id = "battery" gltf-model = "#battery-gltf" position = "-0.5 0.4 -2" scale = "0.4 0.4 0.4"></a-entity>
+                    <a-entity id = "switch" gltf-model = "#switch-gltf" position = "0.8 1.6 -2" scale = "7 7 7" rotation = "0 180 0"></a-entity>           
+                
+                    <a-cylinder color = "red" position = "0.2 1 -2" radius = "0.04" height = "0.3" rotation = "0 0 -45">
+                        <a-triangle color = "red" position = "0 0.2 0" scale = "0.15 0.1 0.1"></a-triangle>
+                    </a-cylinder>
+
+                    <a-cylinder color = "red" position = "0.2 2.5 -2" radius = "0.04" height = "0.3" rotation = "0 0 45">
+                        <a-triangle color = "red" position = "0 0.2 0" scale = "0.15 0.1 0.1"></a-triangle>
+                    </a-cylinder>
+
+                    <a-cylinder color = "red" position = "-1 1.8 -2" radius = "0.04" height = "0.3" rotation = "0 0 180">
+                        <a-triangle color = "red" position = "0 0.2 0" scale = "0.15 0.1 0.1"></a-triangle>
+                    </a-cylinder>
+                </a-entity>
+            </a-marker>
+        </a-scene>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+Model Information:
+* title:	AA Battery
+* source:	https://sketchfab.com/3d-models/aa-battery-ccd72767cd4a4c4f8550900dc4df6e6e
+* author:	Night Raven (https://sketchfab.com/simakovs05)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "AA Battery" (https://sketchfab.com/3d-models/aa-battery-ccd72767cd4a4c4f8550900dc4df6e6e) by Night Raven (https://sketchfab.com/simakovs05) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
